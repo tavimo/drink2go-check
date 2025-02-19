@@ -1,0 +1,23 @@
+.advantages__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.advantages__title-info {
+  @include text-info ();
+}
+
+.advantages__title {
+  @include title-h2 (36px);
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 10px;
+}

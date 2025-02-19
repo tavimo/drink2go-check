@@ -21,10 +21,11 @@
         </picture>
       </a>
       <a class="main-header__user" href="#" aria-current="page">
-        <span>Перейти к авторизации</span>
+
+        <span class="visually-hidden">Перейти к авторизации</span>
       </a>
       <a class="main-header__basket" href="#" aria-current="page">
-        <span>Перейти в корзину</span>
+        <span class="visually-hidden">Перейти в корзину</span>
       </a>
       <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
       <nav class="main-header__navigation">
@@ -49,7 +50,7 @@
   <main class="main-container">
 
     <section class="hero">
-      <div class="container">
+      <div class="container hero__container">
         <picture>
           <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-1-desktop@1x.webp 1x, images/slider-box-1-desktop@2x.webp 2x">
           <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-1-tablet@1x.webp 1x, images/slider-box-1-tablet@2x.webp 2x">
@@ -63,8 +64,8 @@
         <h1 class="hero__title">Декат Флэт Уайт</h1>
         <p class="hero__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
         <div class="hero__price">
-          <span class="hero__price-new"></span>
-          <span class="hero__price-old"></span>
+          <span class="hero__price-old">295₽</span>
+          <span class="hero__price-new">225₽</span>
           <a class="hero__price-button button" href="#">Заказать</a>
         </div>
       </div>
@@ -72,38 +73,38 @@
     </section>
 
     <section class="advantages">
-      <div class="advantages">
+      <div class="advantages__container container">
         <span class="advantages__title-info">Преимущества!</span>
         <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <article class="advantages-card advantages-card--speed">
-              <h3 class="advantages__title">Скорость</h3>
-              <p class="advantages__description">
+              <h3 class="advantages-card__title">Скорость</h3>
+              <p class="advantages-card__description">
                 Готовый напиток всегда под рукой — просто открой банку
               </p>
             </article>
           </li>
           <li class="advantages__item">
             <article class="advantages-card advantages-card--fit">
-              <h3 class="advantages__title">Удобство</h3>
-              <p class="advantages__description">
+              <h3 class="advantages-card__title">Удобство</h3>
+              <p class="advantages-card__description">
                 Легко помещается и в карман, и в маленькую сумочку
               </p>
             </article>
           </li>
           <li class="advantages__item">
             <article class="advantages-card advantages-card--energy">
-              <h3 class="advantages__title">Бодрость</h3>
-              <p class="advantages__description">
+              <h3 class="advantages-card__title">Бодрость</h3>
+              <p class="advantages-card__description">
                 Сбалансированная доза кофеина даст мощный заряд энергии
               </p>
             </article>
           </li>
           <li class="advantages__item">
             <article class="advantages-card advantages-card--eco">
-              <h3 class="advantages__title">Экологичность</h3>
-              <p class="advantages__description">
+              <h3 class="advantages-card__title">Экологичность</h3>
+              <p class="advantages-card__description">
                 Вся упаковка сделана из перерабатываемых материалов
               </p>
             </article>
@@ -114,7 +115,7 @@
     </section>
 
     <section class="catalog">
-      <div class="container">
+      <div class="catalog__container container">
         <span class="catalog__title-info">Каталог</span>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
 
@@ -123,17 +124,7 @@
           <form class="catalog__form catalog-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <fieldset class="catalog-form__range-cost range-cost">
-              <legend class="range-cost__title">Стоимость, ₽:</legend>
-              <div class="range-cost__inputs">
-                <label class="range-cost__control-cost" for="min-cost">от</label>
-                <input class="range-cost__control-input-cost range-cost__control-input-cost--min" type="number" id="min-cost" name="min-cost" value="0" />
-                <label class="range-cost__control-cost" for="max-cost">до</label>
-                <input class="range-cost__control-input-cost range-cost__control-input-cost--max" type="number" id="max-cost" name="max-cost" value="9000" />
-                <label class="visually-hidden">
-                  Выбор цены`
-                  <input type="range" name="range" />
-                </label>
-              </div>
+              <legend class="range-cost__title">Цена</legend>
               <div class="range-cost__scale scale">
                 <div class="scale__range-bar" style="left: 0; width: 206px">
                   <button class="scale__range-toggle scale__range-toggle--min" type="button">
@@ -143,6 +134,17 @@
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
+              </div>
+              <div class="range-cost__inputs">
+                <label class="range-cost__control-cost visually-hidden" for="min-cost"></label>
+                <input class="range-cost__control-input-cost range-cost__control-input-cost--min" type="number" id="min-cost" name="min-cost" value="0" />
+                <span class="range-cost__saparatop"></span>
+                <label class="range-cost__control-cost visually-hidden" for="max-cost"></label>
+                <input class="range-cost__control-input-cost range-cost__control-input-cost--max" type="number" id="max-cost" name="max-cost" value="900" />
+                <label class="visually-hidden">
+                  Выбор цены`
+                  <input type="range" name="range" />
+                </label>
               </div>
             </fieldset>
 
@@ -226,16 +228,21 @@
               <button class="catalog-form__button button" type="button">
                 Применить
               </button>
-              <button class="catalog-form__button button" type="reset">
+              <button class="catalog-form__button button button--light" type="reset">
                 Сбросить
               </button>
             </div>
-
           </form>
-
         </div>
 
-        <div class="catalog-cards">
+        <div class="catalog__sorting">
+          <p class="catalog__sorting-title">Сортировка:</p>
+          <select class="catalog__sorting-list" name="sorting" aria-label="Сортировка">
+            <option value="cheap">По умолчанию</option>
+          </select>
+        </div>
+
+        <div class="catalog__cards catalog-cards">
           <ul class="catalog-cards__list">
             <li class="catalog-cards__item">
               <article class="product-card">
@@ -339,19 +346,19 @@
         <div class="catalog__pagination pagination">
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a class="pagination__link" href="#">стрелка</span></a>
+              <a class="pagination__link" href="#"><span class="visually-hidden">Предыдущая страница</span></span></a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--current" href="#">1</a>
+              <a class="pagination__link" href="#">1</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
+              <a class="pagination__link pagination__link--current" href="#">2</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">стрелка</span></a>
+              <a class="pagination__link" href="#"><span class="visually-hidden">Следующая страница</span></span></a>
             </li>
           </ul>
         </div>
@@ -360,18 +367,16 @@
     </section>
 
     <section class="map">
-      <div class="container">
-        <h2>Контакты</h2>
-        <picture>
-          <source media="(min-width: 1300px)" width="1440" height="540" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" width="768" height="480" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
-          <source width="320" height="420" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" width="1440" height="540" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="480" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img class="map__img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Местонахождение на карте">
-        </picture>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6094560304048!2d30.323465821758433!3d59.93862242360575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1714467114008!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      <h2 class="visually-hidden">Контакты</h2>
+      <picture>
+        <source media="(min-width: 1300px)" width="1440" height="540" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="768" height="480" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+        <source width="320" height="420" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+        <source media="(min-width: 1300px)" width="1440" height="540" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="480" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map__img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Местонахождение на карте">
+      </picture>
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d998.4155789971134!2d30.31661730314329!3d59.96812416662142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YHQsNC90LrRgiDQv9C10YLQtdGA0LHRg9GA0LMg0LrQsNGA0L_QvtCy0LrQuCA1!5e0!3m2!1sru!2sru!4v1739995505032!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -379,55 +384,57 @@
 
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" href="#" aria-current="page">
-        <picture>
-          <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-nav-desktop.svg">
-          <img class="main-header__logo main-header__logo--img" src="images/logo-nav-mobile.svg" width="32" height="36" alt="логотип Drink2Go">
-        </picture>
-      </a>
-      <div class="footer__social-wrapper">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Мы во Вконтакте.</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Мы на Пинтересте.</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Мы в Одноклассниках.</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__social-container">
+        <a class="footer__logo" href="#" aria-current="page">
+          <picture>
+            <source media="(min-width: 768px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-nav-desktop.svg">
+            <img class="main-header__logo main-header__logo--img" src="images/logo-nav-tablet.svg" width="82" height="36" alt="логотип Drink2Go">
+          </picture>
+        </a>
+        <div class="footer__social-wrapper">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Мы во Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--pinterest" href="#" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Мы на Пинтересте.</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--ok" href="#" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Мы в Одноклассниках.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="footer__nav">
         <div class="footer__nav-store">
           <h4 class="footer__nav-title">Интернет-магазин</h4>
-          <ul class="footer__nav-list nav-list">
-            <li class="nav-list__item">Каталог</li>
-            <li class="nav-list__item">Доставка</li>
-            <li class="nav-list__item">Способ оплаты</li>
-            <li class="nav-list__item">О нас</li>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">Каталог</li>
+            <li class="footer__nav-item">Доставка</li>
+            <li class="footer__nav-item">Способ оплаты</li>
+            <li class="footer__nav-item">О нас</li>
           </ul>
         </div>
         <div class="footer__nav-media">
           <h4 class="footer__nav-title">Медиа</h4>
-          <ul class="footer__nav-list nav-list">
-            <li class="nav-list__item">Блог</li>
-            <li class="nav-list__item">Информация для СМИ</li>
-            <li class="nav-list__item">Правовая информация</li>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">Блог</li>
+            <li class="footer__nav-item">Информация для СМИ</li>
+            <li class="footer__nav-item">Правовая информация</li>
           </ul>
         </div>
         <div class="footer__nav-contacts">
           <h4 class="footer__nav-title">Контакты</h4>
-          <address class="map__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
-          <tel>+7 (999) 999-99-99</tel>
+          <address class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+          <tel class="footer__tel">+7 (999) 999-99-99</tel>
         </div>
       </div>
 

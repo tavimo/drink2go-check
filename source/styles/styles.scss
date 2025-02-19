@@ -6,5 +6,20 @@
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/container.scss";
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-form.scss";
+@import "./blocks/range-cost.scss";
+@import "./blocks/selection-milk.scss";
+@import "./blocks/selection-country.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/map.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/footer.scss";

@@ -1,0 +1,33 @@
+.advantages-card {
+  padding: 0;
+  padding-top: 66px;
+}
+
+.advantages-card__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.advantages-card__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-card--speed {
+  @include advantages-card-img (url("../../icons/advantage-list-speed.svg"));
+}
+
+.advantages-card--fit {
+  @include advantages-card-img (url("../../icons/advantage-list-fit.svg"));
+}
+
+.advantages-card--energy {
+  @include advantages-card-img (url("../../icons/advantage-list-energy.svg"));
+}
+
+.advantages-card--eco {
+  @include advantages-card-img (url("../../icons/advantage-list-eco.svg"));
+}

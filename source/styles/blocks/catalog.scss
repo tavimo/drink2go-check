@@ -1,0 +1,59 @@
+.catalog {
+  background-color: $color-backgroung-light;
+}
+
+.catalog__container {
+  padding-top: 50px;
+  padding-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.catalog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.catalog__title-info {
+  @include text-info ();
+}
+
+.catalog__title {
+  @include title-h2 (20px);
+}
+
+.catalog__sorting {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__sorting-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+
+.catalog__sorting-list {
+  border: none;
+  background-color: $color-backgroung-light;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $color-primary;
+  text-transform: lowercase;
+}
+
+.catalog-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}

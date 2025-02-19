@@ -1,4 +1,12 @@
-.main-header__text {
-  font-family: $basic-font;
-  color: green;
+.main-header__logo-link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.main-header__user {
+  display: block;
+  width: 22px;
+  height: 22px;
+  padding: 20px;
+  //background-image: url("../../icons/user-nav-mobile.svg");
 }

@@ -1,0 +1,35 @@
+.range-cost {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.range-cost__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+
+.range-cost__inputs {
+  min-width: 280px;
+  display: flex;
+  grid-template-columns: auto auto auto;
+  gap: 18px;
+}
+
+.range-cost__control-input-cost {
+  padding: 8px 10px;
+  border: 2px solid $color-primary;
+  border-radius: 4px;
+  width: 118px;
+}
+
+.range-cost__saparatop {
+  width: 8px;
+  height: 2px;
+  background-color: #bdbdbd;
+  margin: auto 0;
+}
