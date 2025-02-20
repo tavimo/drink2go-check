@@ -13,13 +13,16 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo-link" href="#" aria-current="page">
-        <picture>
-          <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-nav-desktop.svg">
-          <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-nav-tablet.svg">
-          <img class="main-header__logo main-header__logo--img" src="images/logo-nav-mobile.svg" width="32" height="36" alt="логотип Drink2Go">
-        </picture>
-      </a>
+      <div class="main-header__logo-container">
+        <a class="main-header__logo-link" href="#" aria-current="page">
+          <picture>
+            <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-nav-desktop.svg">
+            <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-nav-tablet.svg">
+            <img class="main-header__logo" src="images/logo-nav-mobile.svg" width="32" height="36" alt="логотип Drink2Go">
+          </picture>
+        </a>
+        <span class="main-header__logo-info">Интернет-магазин кофейных напитков</span>
+      </div>
       <nav class="main-header__navigation">
         <ul class="main-header__list">
           <li class="main-header__item main-header__item--current">
@@ -39,10 +42,10 @@
       <div class="main-header__container-nav">
         <a class="main-header__user" href="#" aria-current="page">
 
-          <span class="visually-hidden">Перейти к авторизации</span>
+          <span class="main-header__user-info">Войти</span>
         </a>
         <a class="main-header__basket" href="#" aria-current="page">
-          <span class="visually-hidden">Перейти в корзину</span>
+          <span class="main-header__basket-info">Корзина</span>
         </a>
         <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
       </div>
@@ -53,15 +56,17 @@
 
     <section class="hero">
       <div class="container hero__container">
-        <picture>
-          <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-1-desktop@1x.webp 1x, images/slider-box-1-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-1-tablet@1x.webp 1x, images/slider-box-1-tablet@2x.webp 2x">
-          <source type="image/webp" width="280" height="280" srcset="images/slider-box-1-mobile@1x.webp 1x, images/slider-box-1-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/slider-box-1-desktop@1x.png 1x, images/slider-box-1-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/slider-box-1-tablet@1x.png 1x, images/slider-box-1-tablet@2x.png 2x">
-          <img class="hero__img" src="images/slider-box-1-mobile@1x.png" srcset="images/slider-box-1-mobile@2x.png 2x" width="280" height="280" alt="Банка свежесваренного кофе Drink2Go">
+        <div class="hero__picture">
+          <picture>
+            <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-1-desktop@1x.webp 1x, images/slider-box-1-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-1-tablet@1x.webp 1x, images/slider-box-1-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="280" srcset="images/slider-box-1-mobile@1x.webp 1x, images/slider-box-1-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/slider-box-1-desktop@1x.png 1x, images/slider-box-1-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/slider-box-1-tablet@1x.png 1x, images/slider-box-1-tablet@2x.png 2x">
+            <img class="hero__img" src="images/slider-box-1-mobile@1x.png" srcset="images/slider-box-1-mobile@2x.png 2x" width="280" height="280" alt="Банка свежесваренного кофе Drink2Go">
 
-        </picture>
+          </picture>
+        </div>
         <span class="hero__title-info">Новинка!</span>
         <h1 class="hero__title">Декат Флэт Уайт</h1>
         <p class="hero__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -393,6 +398,7 @@
             <img class="main-header__logo main-header__logo--img" src="images/logo-nav-tablet.svg" width="82" height="36" alt="логотип Drink2Go">
           </picture>
         </a>
+        <span class="footer__logo-info">Интернет-магазин кофейных напитков</span>
         <div class="footer__social-wrapper">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer__social-list social-list">

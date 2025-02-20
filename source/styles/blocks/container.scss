@@ -8,4 +8,11 @@
     min-width: 728px;
     max-width: 1040px;
   }
+
+  @media (min-width: 1440px) {
+    max-width: none;
+    min-width: 1440;
+    width: 1440px;
+    padding: 0 40px;
+  }
 }
