@@ -1,13 +1,13 @@
-.pagination {
-  margin: 0 auto;
-}
-
 .pagination__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: end;
+  }
 }
 
 .pagination__link {
@@ -42,6 +42,10 @@
   position: absolute;
   top: 15px;
   left: 17px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .pagination__item:first-child {
@@ -57,4 +61,18 @@
   top: 15px;
   left: 17px;
   transform: rotate(180deg);
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.pagination__link-text {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
 }

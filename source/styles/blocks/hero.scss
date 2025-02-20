@@ -1,6 +1,10 @@
 .hero {
   background-color: $color-flat-white;
   min-width: 280px;
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient($color-flat-white 75%, #ffffff 25%);
+  }
 }
 
 .hero__container {
@@ -8,17 +12,29 @@
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding-top: 60px;
+  }
 }
 
 .hero__img {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .hero__title-info {
   @include text-info ();
+
+  @media (min-width: 768px) {
+    order: -4;
+  }
 }
 
 .hero__title {
@@ -29,11 +45,29 @@
   line-height: 48px;
   text-align: center;
   margin-bottom: 10px;
+  display: block;
+
+  @media (min-width: 768px) {
+    order: -3;
+    font-size: 56px;
+    line-height: 80px;
+    width: 610px;
+    margin-bottom: 16px;
+  }
 }
 
 .hero__text {
+  margin: 0;
   text-align: center;
+  display: block;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    order: -2;
+    font-size: 20px;
+    line-height: 32px;
+    width: 610px;
+  }
 }
 
 .hero__price {
@@ -42,6 +76,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    order: -1;
+    margin-bottom: 20px;
+  }
 }
 
 .hero__price-old {

@@ -20,14 +20,6 @@
           <img class="main-header__logo main-header__logo--img" src="images/logo-nav-mobile.svg" width="32" height="36" alt="логотип Drink2Go">
         </picture>
       </a>
-      <a class="main-header__user" href="#" aria-current="page">
-
-        <span class="visually-hidden">Перейти к авторизации</span>
-      </a>
-      <a class="main-header__basket" href="#" aria-current="page">
-        <span class="visually-hidden">Перейти в корзину</span>
-      </a>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
       <nav class="main-header__navigation">
         <ul class="main-header__list">
           <li class="main-header__item main-header__item--current">
@@ -44,6 +36,16 @@
           </li>
         </ul>
       </nav>
+      <div class="main-header__container-nav">
+        <a class="main-header__user" href="#" aria-current="page">
+
+          <span class="visually-hidden">Перейти к авторизации</span>
+        </a>
+        <a class="main-header__basket" href="#" aria-current="page">
+          <span class="visually-hidden">Перейти в корзину</span>
+        </a>
+        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
+      </div>
     </div>
   </header>
 
@@ -121,9 +123,9 @@
 
         <div class="catalog__filters">
 
-          <form class="catalog__form catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <fieldset class="catalog-form__range-cost range-cost">
+            <fieldset class="catalog__range-cost range-cost">
               <legend class="range-cost__title">Цена</legend>
               <div class="range-cost__scale scale">
                 <div class="scale__range-bar" style="left: 0; width: 206px">
@@ -148,7 +150,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="catalog-form__selection-milk selection-milk">
+            <fieldset class="catalog__selection-milk selection-milk">
               <legend class="selection-milk__title">Наличие молока</legend>
               <ul class="selection-milk__list">
                 <li class="selection-milk__item">
@@ -182,7 +184,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-form__selection-country selection-country">
+            <fieldset class="catalog__selection-country selection-country">
               <legend class="selection-country__title">Инфраструктура:</legend>
               <ul class="selection-country__list">
                 <li class="selection-country__item">
@@ -224,11 +226,11 @@
               </ul>
             </fieldset>
 
-            <div class="catalog-form__button-container">
-              <button class="catalog-form__button button" type="button">
+            <div class="catalog__button-container">
+              <button class="catalog__button button" type="button">
                 Применить
               </button>
-              <button class="catalog-form__button button button--light" type="reset">
+              <button class="catalog__button button button--light" type="reset">
                 Сбросить
               </button>
             </div>
@@ -242,9 +244,9 @@
           </select>
         </div>
 
-        <div class="catalog__cards catalog-cards">
-          <ul class="catalog-cards__list">
-            <li class="catalog-cards__item">
+        <div class="catalog__cards">
+          <ul class="catalog__list">
+            <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__img-link" href="#" aria-label="страница товара">
                   <picture>
@@ -346,7 +348,7 @@
         <div class="catalog__pagination pagination">
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a class="pagination__link" href="#"><span class="visually-hidden">Предыдущая страница</span></span></a>
+              <a class="pagination__link" href="#"><span class="pagination__link-text">Назад</span></span></a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#">1</a>
@@ -358,7 +360,7 @@
               <a class="pagination__link" href="#">3</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#"><span class="visually-hidden">Следующая страница</span></span></a>
+              <a class="pagination__link" href="#"><span class="pagination__link-text">Вперед</span></span></a>
             </li>
           </ul>
         </div>

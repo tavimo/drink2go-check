@@ -25,6 +25,10 @@
   border: 2px solid $color-primary;
   border-radius: 4px;
   width: 118px;
+
+  @media (min-width: 768px) {
+    width: 87px;
+  }
 }
 
 .range-cost__saparatop {
