@@ -38,6 +38,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  letter-spacing: 0.6px;
   color: $color-black;
   margin-bottom: 4px;
 
@@ -67,16 +68,18 @@
 
 .product-card__button {
   font-size: 14px;
+  line-height: 20px;
   position: relative;
   padding: 8px 20px 8px 46px;
   text-align: start;
+  letter-spacing: 1px;
 }
 
 .product-card__button::before {
   content: "";
   width: 20px;
   height: 16px;
-  background-image: url("../../icons/catalog-basket.svg");
+  background-image: url ("../../icons/catalog-basket.svg");
   position: absolute;
   left: 20px;
 }

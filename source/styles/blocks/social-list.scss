@@ -3,7 +3,13 @@
   padding: 0;
   display: flex;
   list-style: none;
-  gap: 39px;
+  gap: 21px;
+  padding-bottom: 2px;
+}
+
+.social-list__link {
+  display: block;
+  padding: 9px;
 }
 
 .social-list__link--vk {

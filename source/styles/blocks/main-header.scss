@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: 1440px) {
     padding: 0 40px;
@@ -158,5 +160,10 @@
 }
 
 .main-header__logo {
-  margin-right: 20px;
+  margin-left: 20px;
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
+    margin-right: 20px;
+  }
 }

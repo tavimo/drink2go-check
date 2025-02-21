@@ -11,8 +11,8 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__container container">
+  <header class="main-header" data-test="header">
+    <div class=" main-header__container container">
       <div class="main-header__logo-container">
         <a class="main-header__logo-link" href="#" aria-current="page">
           <picture>
@@ -54,7 +54,7 @@
 
   <main class="main-container">
 
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="container hero__container">
         <div class="hero__picture">
           <picture>
@@ -68,7 +68,7 @@
           </picture>
         </div>
         <span class="hero__title-info">Новинка!</span>
-        <h1 class="hero__title">Декат Флэт Уайт</h1>
+        <h1 class="hero__title">Декаф Флэт Уайт</h1>
         <p class="hero__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
         <div class="hero__price">
           <span class="hero__price-old">295₽</span>
@@ -79,7 +79,7 @@
 
     </section>
 
-    <section class="advantages">
+    <section class="advantages" data-test="features">
       <div class="advantages__container container">
         <span class="advantages__title-info">Преимущества!</span>
         <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
@@ -96,7 +96,7 @@
             <article class="advantages-card advantages-card--fit">
               <h3 class="advantages-card__title">Удобство</h3>
               <p class="advantages-card__description">
-                Легко помещается и в карман, и в маленькую сумочку
+                Легко помещается и в карман,<br>и в маленькую сумочку
               </p>
             </article>
           </li>
@@ -112,7 +112,7 @@
             <article class="advantages-card advantages-card--eco">
               <h3 class="advantages-card__title">Экологичность</h3>
               <p class="advantages-card__description">
-                Вся упаковка сделана из перерабатываемых материалов
+                Вся упаковка сделана <br>из перерабатываемых материалов
               </p>
             </article>
           </li>
@@ -121,7 +121,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__container container">
         <span class="catalog__title-info">Каталог</span>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
@@ -133,7 +133,7 @@
             <fieldset class="catalog__range-cost range-cost">
               <legend class="range-cost__title">Цена</legend>
               <div class="range-cost__scale scale">
-                <div class="scale__range-bar" style="left: 0; width: 206px">
+                <div class="scale__range-bar" style="left: 0; width: 241px">
                   <button class="scale__range-toggle scale__range-toggle--min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
@@ -190,7 +190,7 @@
             </fieldset>
 
             <fieldset class="catalog__selection-country selection-country">
-              <legend class="selection-country__title">Инфраструктура:</legend>
+              <legend class="selection-country__title">Страна произрастания</legend>
               <ul class="selection-country__list">
                 <li class="selection-country__item">
                   <label class="selection-country__control">
@@ -261,7 +261,7 @@
                 <a class="product-card__title-link" href="#">
                   <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="product-card__description">Кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком</p>
                 <span class="product-card__cost">225₽</span>
 
                 <button class="product-card__button button" type="button">В корзину</button>
@@ -277,7 +277,7 @@
                 <a class="product-card__title-link" href="#">
                   <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="product-card__description">Кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком</p>
                 <span class="product-card__cost">225₽</span>
 
                 <button class="product-card__button button" type="button">В корзину</button>
@@ -293,7 +293,7 @@
                 <a class="product-card__title-link" href="#">
                   <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="product-card__description">Кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком</p>
                 <span class="product-card__cost">225₽</span>
 
                 <button class="product-card__button button" type="button">В корзину</button>
@@ -309,7 +309,7 @@
                 <a class="product-card__title-link" href="#">
                   <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="product-card__description">Кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком</p>
                 <span class="product-card__cost">225₽</span>
 
                 <button class="product-card__button button" type="button">В корзину</button>
@@ -325,7 +325,7 @@
                 <a class="product-card__title-link" href="#">
                   <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="product-card__description">Кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком</p>
                 <span class="product-card__cost">225₽</span>
 
                 <button class="product-card__button button" type="button">В корзину</button>
@@ -341,7 +341,7 @@
                 <a class="product-card__title-link" href="#">
                   <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="product-card__description">Кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком</p>
                 <span class="product-card__cost">225₽</span>
 
                 <button class="product-card__button button" type="button">В корзину</button>
@@ -373,7 +373,7 @@
       </div>
     </section>
 
-    <section class="map">
+    <section class="map" data-test="map">
       <h2 class="visually-hidden">Контакты</h2>
       <picture>
         <source media="(min-width: 1300px)" width="1440" height="540" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
@@ -389,13 +389,13 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container container">
       <div class="footer__social-container">
         <a class="footer__logo" href="#" aria-current="page">
           <picture>
             <source media="(min-width: 768px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-nav-desktop.svg">
-            <img class="main-header__logo main-header__logo--img" src="images/logo-nav-tablet.svg" width="82" height="36" alt="логотип Drink2Go">
+            <img class="footer__logo-img" src="images/logo-nav-tablet.svg" width="82" height="36" alt="логотип Drink2Go">
           </picture>
         </a>
         <span class="footer__logo-info">Интернет-магазин кофейных напитков</span>
@@ -427,7 +427,7 @@
           <ul class="footer__nav-list">
             <li class="footer__nav-item">Каталог</li>
             <li class="footer__nav-item">Доставка</li>
-            <li class="footer__nav-item">Способ оплаты</li>
+            <li class="footer__nav-item">Способы оплаты</li>
             <li class="footer__nav-item">О нас</li>
           </ul>
         </div>
