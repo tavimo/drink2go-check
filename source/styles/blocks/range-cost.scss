@@ -20,6 +20,11 @@
   grid-template-columns: auto auto auto;
   gap: 18px;
   margin-top: 36px;
+
+  @media (min-width: 768px) {
+    margin-top: 32px;
+    gap: 20px;
+  }
 }
 
 .range-cost__control-input-cost {
@@ -68,6 +73,10 @@
   position: absolute;
   left: 226px;
   top: -11px;
+
+  @media (min-width: 768px) {
+    left: 168px;
+  }
 }
 
 .range-cost__scale {
@@ -76,10 +85,19 @@
   height: 2px;
   background-color: #e2e2e2;
   left: 10px;
+
+  @media (min-width: 768px) {
+    width: 223px;
+  }
 }
 
 .scale__range-bar {
   position: absolute;
   height: 4px;
   background-color: $color-primary;
+  width: 241px;
+
+  @media (min-width: 768px) {
+    width: 192px;
+  }
 }

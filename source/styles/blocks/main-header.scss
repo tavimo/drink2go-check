@@ -4,7 +4,10 @@
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 320px;
+
+  @media (min-width: 768px) {
+    padding: 0 20px;
+  }
 
   @media (min-width: 1440px) {
     padding: 0 40px;
@@ -100,6 +103,11 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 20px;
+  display: block;
+
+  @media (min-width: 768px) {
+    padding: 32px 20px 30px;
+  }
 
   @media (min-width: 1440px) {
     padding: 32px 20px;
@@ -161,6 +169,10 @@
 
 .main-header__logo {
   margin-left: 20px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
 
   @media (min-width: 1440px) {
     margin-left: 0;

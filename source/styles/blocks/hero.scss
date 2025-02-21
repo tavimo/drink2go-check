@@ -3,7 +3,7 @@
   min-width: 280px;
 
   @media (min-width: 768px) {
-    background-image: linear-gradient($color-flat-white 75%, #ffffff 25%);
+    background-image: linear-gradient($color-flat-white 77%, #ffffff 25%);
   }
 
   @media (min-width: 1440px) {
@@ -21,6 +21,7 @@
 
   @media (min-width: 768px) {
     padding-top: 60px;
+    padding-bottom: 0;
   }
 
   @media (min-width: 1440px) {
@@ -85,6 +86,7 @@
     line-height: 80px;
     width: 610px;
     margin-bottom: 16px;
+    letter-spacing: 3px;
   }
 
   @media (min-width: 1440px) {
@@ -107,7 +109,7 @@
     order: -2;
     font-size: 20px;
     line-height: 32px;
-    width: 610px;
+    width: 590px;
   }
 
   @media (min-width: 1440px) {
