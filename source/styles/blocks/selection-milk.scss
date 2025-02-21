@@ -68,3 +68,7 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+.selection-milk__control-input:disabled + .selection-milk__control-mark + .selection-milk__control-label {
+  color: #e2e2e2;
+}
