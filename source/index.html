@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <title>Кофе без кофеина Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/32.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -132,12 +135,12 @@
 
             <fieldset class="catalog__range-cost range-cost">
               <legend class="range-cost__title">Цена</legend>
-              <div class="range-cost__scale scale">
-                <div class="scale__range-bar">
-                  <button class="scale__range-toggle scale__range-toggle--min" type="button">
+              <div class="range-cost__scale">
+                <div class="range-cost__range-bar">
+                  <button class="range-cost__range-toggle range-cost__range-toggle--min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="scale__range-toggle scale__range-toggle--max" type="button">
+                  <button class="range-cost__range-toggle range-cost__range-toggle--max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
@@ -376,10 +379,10 @@
     <section class="map" data-test="map">
       <h2 class="visually-hidden">Контакты</h2>
       <picture>
-        <source media="(min-width: 1300px)" width="1440" height="540" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="1440" height="540" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
         <source media="(min-width: 768px)" width="768" height="480" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
         <source width="320" height="420" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
-        <source media="(min-width: 1300px)" width="1440" height="540" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source media="(min-width: 1440px)" width="1440" height="540" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="480" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
         <img class="map__img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Местонахождение на карте">
       </picture>
@@ -446,7 +449,7 @@
         </div>
       </div>
 
-      <a class="footer__copyright-link" href="https://htmlacademy.ru" target="_blank" rel="noreferrer noopener">
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
         <span class="footer__copyright-name">Разработано в HTML Academy</span>
       </a>
     </div>

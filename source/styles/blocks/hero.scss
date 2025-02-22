@@ -36,19 +36,26 @@
 .hero__img {
   display: block;
   margin: 0 auto;
+}
+
+.hero__picture {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    width: 476px;
+    height: 476px;
   }
 
   @media (min-width: 1440px) {
+    width: 600px;
+    height: 600px;
     margin-left: 70px;
-  }
-}
-
-.hero__picture {
-  @media (min-width: 1440px) {
     grid-row: 1/6;
   }
 }

@@ -24,6 +24,19 @@
 .product-card__img-link {
   grid-column: 1/3;
   margin: 0 auto;
+  width: 130px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card__img-link img {
+  max-width: 100%;
+  max-height: 188px;
+  margin: 0 auto;
+  display: block;
 }
 
 .product-card__title-link {
@@ -80,7 +93,7 @@
   content: "";
   width: 20px;
   height: 16px;
-  background-image: url ("../../icons/catalog-basket.svg");
+  background-image: url("../../icons/catalog-basket.svg");
   position: absolute;
   left: 20px;
 }

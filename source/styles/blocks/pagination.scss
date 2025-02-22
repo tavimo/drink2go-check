@@ -22,6 +22,22 @@
   height: 40px;
   border-radius: 4px;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #9070ec;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #593cac;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #e2e2e2;
+    color: #ffffff;
+  }
 }
 
 .pagination__link--current {

@@ -60,4 +60,11 @@
     background-color: #bdbdbd;
     mask-image: $mask-image-url;
   }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $color-primary;
+  }
 }
+

@@ -112,7 +112,6 @@
 
 
 .catalog__sorting-list {
-  border: none;
   background-color: $color-backgroung-light;
   font-family: inherit;
   font-size: 16px;
@@ -121,6 +120,18 @@
   color: $color-primary;
   text-transform: lowercase;
   padding-right: 10px;
+  border: none;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #f0ebff;
+    border-radius: 4px;
+  }
+
+  &:active {
+
+  }
 }
 
 .catalog__cards {

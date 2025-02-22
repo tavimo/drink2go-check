@@ -31,7 +31,7 @@
   text-decoration: none;
 }
 
-
+/*
 .main-header__basket {
   text-decoration: none;
   display: block;
@@ -48,9 +48,18 @@
     height: auto;
     padding: 32px 20px;
     background-position: 20px;
+
+    &:active {
+      background-color: #f0ebff;
+      border-bottom: 2px solid #f0ebff;
+    }
+  }
+
+  &:active {
+    background-color: #f0ebff;
   }
 }
-
+/*
 .main-header__user {
   text-decoration: none;
   display: block;
@@ -67,9 +76,119 @@
     height: auto;
     padding: 32px 20px;
     background-position: 20px;
+
+    &:hover,
+    &:focus {
+
+    }
+
+    &:active {
+      background-color: #f0ebff;
+      border-bottom: 2px solid #f0ebff;
+    }
+  }
+
+  &:active {
+    background-color: #f0ebff;
+  }
+}
+*/
+.main-header__user {
+  width: 60px;
+  height: 60px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    width: 16px;
+    height: 16px;
+    mask-image: url("../../icons/stack.svg#user-nav-mobile");
+    background-color: #333333;
+  }
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 80px;
+    padding: 32px 22px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  @media (min-width: 1440px) {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      background-color: $color-primary;
+    }
+  }
+
+  &:active {
+    background-color: #f0ebff;
+    border-bottom: 2px solid #f0ebff;
   }
 }
 
+.main-header__basket {
+  width: 60px;
+  height: 60px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    width: 16px;
+    height: 16px;
+    mask-image: url("../../icons/stack.svg#basket-nav-mobile");
+    background-color: #333333;
+  }
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 80px;
+    padding: 32px 22px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  @media (min-width: 1440px) {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      background-color: $color-primary;
+    }
+  }
+
+  &:active {
+    background-color: #f0ebff;
+    border-bottom: 2px solid #f0ebff;
+  }
+}
+//Test end
 .main-header__toggle {
   border: none;
   width: 60px;
@@ -83,6 +202,10 @@
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  &:active {
+    background-color: #f0ebff;
   }
 }
 
@@ -122,6 +245,17 @@
   @media (min-width: 1440px) {
     padding: 32px 20px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-primary;
+    background-color: #f0ebff;
+    border-bottom: 2px solid #f0ebff;
+  }
 }
 
 .main-header__item--current .main-header__link {
@@ -152,7 +286,25 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-black;
-    padding-left: 24px;
+    padding-left: 10px;
+  }
+}
+
+.main-header__user:hover .main-header__user-info {
+  @media (min-width: 1440px) {
+    color: $color-primary;
+  }
+}
+
+.main-header__user:focus .main-header__user-info {
+  @media (min-width: 1440px) {
+    color: $color-primary;
+  }
+}
+
+.main-header__user:active .main-header__user-info {
+  @media (min-width: 1440px) {
+    color: $color-primary;
   }
 }
 
@@ -166,7 +318,25 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-black;
-    padding-left: 24px;
+    padding-left: 10px;
+  }
+}
+
+.main-header__basket:hover .main-header__basket-info {
+  @media (min-width: 1440px) {
+    color: $color-primary;
+  }
+}
+
+.main-header__basket:focus .main-header__basket-info {
+  @media (min-width: 1440px) {
+    color: $color-primary;
+  }
+}
+
+.main-header__basket:active .main-header__basket-info {
+  @media (min-width: 1440px) {
+    color: $color-primary;
   }
 }
 

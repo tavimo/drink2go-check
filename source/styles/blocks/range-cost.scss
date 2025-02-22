@@ -31,9 +31,15 @@
   }
 }
 
+.range-cost__control-input-cost::-webkit-outer-spin-button,
+.range-cost__control-input-cost::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .range-cost__control-input-cost {
   padding: 6px 10px;
-  border: 2px solid $color-primary;
+  border: 2px solid #9070ec;
   border-radius: 4px;
   width: 118px;
   font-family: inherit;
@@ -41,6 +47,8 @@
   line-height: 24px;
   font-weight: 500;
   text-align: center;
+  outline: none;
+  color: #bdbdbd;
 
 
   @media (min-width: 768px) {
@@ -49,6 +57,23 @@
 
   @media (min-width: 1440px) {
     width: 134px;
+  }
+
+  &:focus {
+    border: 2px solid #9070ec;
+    box-shadow: none;
+    color: #333333;
+  }
+
+  &:active {
+    border: 2px solid $color-primary;
+    color: #333333;
+  }
+
+  &:disabled {
+    border: 2px solid #bdbdbd;
+    color: #bdbdbd;
+    background-color: $color-backgroung-light;
   }
 }
 
@@ -61,33 +86,49 @@
 
 
 //Ползунок цены
-.scale__range-toggle {
-  content: "";
+.range-cost__range-toggle {
   background-color: #ffffff;
-  border: 2px solid $color-primary;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px $color-primary;
   position: absolute;
+  left: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: #d8d0ee;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: $color-backgroung-light;
+    border: 2px solid $color-backgroung-light;
+    box-shadow: 0 0 0 2px #bdbdbd;
+  }
 }
 
-.scale__range-toggle--min {
+.range-cost__range-toggle--min {
   position: absolute;
   left: -11px;
   top: -11px;
 }
 
-.scale__range-toggle--max {
+.range-cost__range-toggle--max {
   position: absolute;
   left: 226px;
   top: -11px;
 
   @media (min-width: 768px) {
-    left: 168px;
+    left: 172px;
   }
 
   @media (min-width: 1440px) {
-    left: 264px;
+    left: 268px;
   }
 }
 
@@ -107,7 +148,7 @@
   }
 }
 
-.scale__range-bar {
+.range-cost__range-bar {
   position: absolute;
   height: 4px;
   background-color: $color-primary;
@@ -119,5 +160,9 @@
 
   @media (min-width: 1440px) {
     width: 274px;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
   }
 }
