@@ -59,24 +59,75 @@
 
     <section class="hero" data-test="hero">
       <div class="container hero__container">
-        <div class="hero__picture">
-          <picture>
-            <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-1-desktop@1x.webp 1x, images/slider-box-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-1-tablet@1x.webp 1x, images/slider-box-1-tablet@2x.webp 2x">
-            <source type="image/webp" width="280" height="280" srcset="images/slider-box-1-mobile@1x.webp 1x, images/slider-box-1-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/slider-box-1-desktop@1x.png 1x, images/slider-box-1-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/slider-box-1-tablet@1x.png 1x, images/slider-box-1-tablet@2x.png 2x">
-            <img class="hero__img" src="images/slider-box-1-mobile@1x.png" srcset="images/slider-box-1-mobile@2x.png 2x" width="280" height="280" alt="Банка свежесваренного кофе Drink2Go">
-
-          </picture>
-        </div>
-        <span class="hero__title-info">Новинка!</span>
-        <h1 class="hero__title">Декаф Флэт Уайт</h1>
-        <p class="hero__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-        <div class="hero__price">
-          <span class="hero__price-old">295₽</span>
-          <span class="hero__price-new">225₽</span>
-          <a class="hero__price-button button" href="#">Заказать</a>
+        <div class="hero__slider slider">
+          <div class="slider__container">
+            <div class="slider__item slider__item--1">
+              <div class="slider__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-1-desktop@1x.webp 1x, images/slider-box-1-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-1-tablet@1x.webp 1x, images/slider-box-1-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="280" srcset="images/slider-box-1-mobile@1x.webp 1x, images/slider-box-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/slider-box-1-desktop@1x.png 1x, images/slider-box-1-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/slider-box-1-tablet@1x.png 1x, images/slider-box-1-tablet@2x.png 2x">
+                  <img class="slider__img" src="images/slider-box-1-mobile@1x.png" srcset="images/slider-box-1-mobile@2x.png 2x" width="280" height="280" alt="Банка свежесваренного кофе Drink2Go">
+                </picture>
+              </div>
+              <span class="slider__title-info">Новинка!</span>
+              <h1 class="slider__title">Декаф Флэт Уайт</h1>
+              <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="slider__price">
+                <span class="slider__price-old">295₽</span>
+                <span class="slider__price-new">225₽</span>
+                <a class="slider__price-button button" href="#">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__item slider__item--2">
+              <div class="slider__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-2-desktop@1x.webp 1x, images/slider-box-2-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-2-tablet@1x.webp 1x, images/slider-box-2-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="280" srcset="images/slider-box-1-mobile@1x.webp 1x, images/slider-box-2-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/slider-box-2-desktop@1x.png 1x, images/slider-box-2-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/slider-box-2-tablet@1x.png 1x, images/slider-box-2-tablet@2x.png 2x">
+                  <img class="slider__img" src="images/slider-box-2-mobile@1x.png" srcset="images/slider-box-2-mobile@2x.png 2x" width="280" height="280" alt="Банка свежесваренного кофе Drink2Go">
+                </picture>
+              </div>
+              <span class="slider__title-info">Новинка!</span>
+              <h1 class="slider__title">Лавандовый Латте</h1>
+              <p class="slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="slider__price">
+                <span class="slider__price-old">285₽</span>
+                <span class="slider__price-new">265₽</span>
+                <a class="slider__price-button button" href="#">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__item slider__item--3">
+              <div class="slider__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" width="600" height="600" type="image/webp" srcset="images/slider-box-3-desktop@1x.webp 1x, images/slider-box-3-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="images/slider-box-3-tablet@1x.webp 1x, images/slider-box-3-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="280" srcset="images/slider-box-3-mobile@1x.webp 1x, images/slider-box-3-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/slider-box-3-desktop@1x.png 1x, images/slider-box-3-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/slider-box-3-tablet@1x.png 1x, images/slider-box-3-tablet@2x.png 2x">
+                  <img class="slider__img" src="images/slider-box-3-mobile@1x.png" srcset="images/slider-box-3-mobile@2x.png 2x" width="280" height="280" alt="Банка свежесваренного кофе Drink2Go">
+                </picture>
+              </div>
+              <span class="slider__title-info">Новинка!</span>
+              <h1 class="slider__title">Тройной Эспрессо</h1>
+              <p class="slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="slider__price">
+                <span class="slider__price-old">395₽</span>
+                <span class="slider__price-new">375₽</span>
+                <a class="slider__price-button button" href="#">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <button class="slider__button slider__button--prev" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+          <button class="slider__button slider__button--next" type="button" aria-label="Посмотреть следующий слайд"></button>
         </div>
       </div>
 
