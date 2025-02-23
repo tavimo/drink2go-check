@@ -1,5 +1,14 @@
 .slider {
   position: relative;
+  min-height: 656px;
+
+  @media (min-width: 768px) {
+    min-height: 828px;
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 714px;
+  }
 }
 
 .slider__item {
@@ -203,6 +212,8 @@
 
 /* Кнопки */
 .slider__button {
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 0;
   width: 20px;
@@ -215,14 +226,54 @@
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: 50%;
-}
 
+  @media (min-width: 768px) {
+    width: 60px;
+    background-size: 20px 20px;
+    height: 77%;
+    background-position: 10px 50%;
+  }
+
+  @media (min-width: 1440px) {
+    height: 100%;
+  }
+
+  &::before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 100%;
+
+    @media (min-width: 768px) {
+      width: 60px;
+    }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    content: " ";
+    background-image: linear-gradient(to left, #ffffff, transparent);
+  }
+
+  &:active::before {
+    content: " ";
+    background-image: linear-gradient(to left, #dad2ee, transparent);
+  }
+}
 
 .slider__button--prev {
   left: -20px;
   transform: rotate(180deg);
+
+  @media (min-width: 1440px) {
+    left: -40px;
+  }
 }
 
 .slider__button--next {
   right: -20px;
+
+  @media (min-width: 1440px) {
+    right: -40px;
+  }
 }
