@@ -17,32 +17,29 @@ window.addEventListener('resize', () => {
 });
 
 /*Слайдер*/
-// Получаем элементы слайдера
-
 const slider = document.querySelector('.slider');
-const prevButton = document.querySelector('.slider__button--prev');
-const nextButton = document.querySelector('.slider__button--next');
+const prevButton = document.querySelector('.slider-button-prev');
+const nextButton = document.querySelector('.slider-button-next');
 const slides = Array.from(slider.querySelectorAll('.slider__container'));
 const slideCount = slides.length;
 let slideIndex = 0;
 
-// Устанавливаем обработчики событий для кнопок
 prevButton.addEventListener('click', showPreviousSlide);
 nextButton.addEventListener('click', showNextSlide);
 
-// Функция для показа предыдущего слайда
+// Предыдущий слайд
 function showPreviousSlide() {
   slideIndex = (slideIndex - 1 + slideCount) % slideCount;
   updateSlider();
 }
 
-// Функция для показа следующего слайда
+// Следующий слайд
 function showNextSlide() {
   slideIndex = (slideIndex + 1) % slideCount;
   updateSlider();
 }
 
-// Функция для обновления отображения слайдера
+// Отображение нового слайда
 function updateSlider() {
   slides.forEach((slide, index) => {
     if (index === slideIndex) {
@@ -52,9 +49,8 @@ function updateSlider() {
     }
   });
 
-  prevButton.disabled = slideIndex === 0; // Блокируем кнопку "Назад", если это первый слайд
+  prevButton.disabled = slideIndex === 0;
   nextButton.disabled = slideIndex === slideCount - 1;
 }
 
-// Инициализация слайдера
 updateSlider();

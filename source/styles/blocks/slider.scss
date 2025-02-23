@@ -261,7 +261,7 @@
   }
 }
 
-.slider__button--prev {
+.slider-button-prev {
   left: -20px;
   transform: rotate(180deg);
 
@@ -270,7 +270,7 @@
   }
 }
 
-.slider__button--next {
+.slider-button-next {
   right: -20px;
 
   @media (min-width: 1440px) {
