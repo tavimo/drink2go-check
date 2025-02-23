@@ -1,0 +1,101 @@
+.advantages-card {
+  padding: 0;
+  padding-top: 66px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 76px;
+    padding-left: 0;
+    width: 317px;
+  }
+}
+
+.advantages-card__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: start;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: center;
+  }
+}
+
+.advantages-card__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: center;
+  }
+}
+
+.advantages-card--speed {
+  @include advantages-card-img (url("../../icons/advantage-list-speed.svg"));
+
+  @media (min-width: 768px) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: 50% 0;
+  }
+}
+
+.advantages-card--fit {
+  @include advantages-card-img (url("../../icons/advantage-list-fit.svg"));
+
+  @media (min-width: 768px) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: 50% 0;
+  }
+}
+
+.advantages-card--energy {
+  @include advantages-card-img (url("../../icons/advantage-list-energy.svg"));
+
+  @media (min-width: 768px) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: 50% 0;
+  }
+}
+
+.advantages-card--eco {
+  @include advantages-card-img (url("../../icons/advantage-list-eco.svg"));
+
+  @media (min-width: 768px) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: 50% 0;
+  }
+}

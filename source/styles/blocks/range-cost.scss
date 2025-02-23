@@ -1,0 +1,168 @@
+.range-cost {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.range-cost__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 28px;
+  }
+}
+
+
+.range-cost__inputs {
+  min-width: 280px;
+  display: flex;
+  grid-template-columns: auto auto auto;
+  gap: 18px;
+  margin-top: 36px;
+
+  @media (min-width: 768px) {
+    margin-top: 32px;
+    gap: 20px;
+  }
+}
+
+.range-cost__control-input-cost::-webkit-outer-spin-button,
+.range-cost__control-input-cost::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-cost__control-input-cost {
+  padding: 6px 10px;
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+  width: 118px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  outline: none;
+  color: #bdbdbd;
+
+
+  @media (min-width: 768px) {
+    width: 87px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 134px;
+  }
+
+  &:focus {
+    border: 2px solid #9070ec;
+    box-shadow: none;
+    color: #333333;
+  }
+
+  &:active {
+    border: 2px solid $color-primary;
+    color: #333333;
+  }
+
+  &:disabled {
+    border: 2px solid #bdbdbd;
+    color: #bdbdbd;
+    background-color: $color-backgroung-light;
+  }
+}
+
+.range-cost__saparatop {
+  width: 8px;
+  height: 2px;
+  background-color: #bdbdbd;
+  margin: auto 0;
+}
+
+
+//Ползунок цены
+.range-cost__range-toggle {
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px $color-primary;
+  position: absolute;
+  left: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: #d8d0ee;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: $color-backgroung-light;
+    border: 2px solid $color-backgroung-light;
+    box-shadow: 0 0 0 2px #bdbdbd;
+  }
+}
+
+.range-cost__range-toggle--min {
+  position: absolute;
+  left: -11px;
+  top: -11px;
+}
+
+.range-cost__range-toggle--max {
+  position: absolute;
+  left: 226px;
+  top: -11px;
+
+  @media (min-width: 768px) {
+    left: 172px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 268px;
+  }
+}
+
+.range-cost__scale {
+  position: relative;
+  width: 280px;
+  height: 2px;
+  background-color: #e2e2e2;
+  left: 10px;
+
+  @media (min-width: 768px) {
+    width: 223px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 318px;
+  }
+}
+
+.range-cost__range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: $color-primary;
+  width: 241px;
+
+  @media (min-width: 768px) {
+    width: 192px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 274px;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
+}

@@ -1,0 +1,94 @@
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: end;
+  }
+}
+
+.pagination__link {
+  padding: 8px;
+  font-size: 16px;
+  color: $color-primary;
+  line-height: 24px;
+  text-decoration: none;
+  display: block;
+  background-color: #ffffff;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #9070ec;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #593cac;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #e2e2e2;
+    color: #ffffff;
+  }
+}
+
+.pagination__link--current {
+  color: $color-black;
+  background-color: $color-backgroung-light;
+  font-weight: 600;
+}
+
+.pagination__item:last-child {
+  position: relative;
+}
+
+.pagination__item:last-child::before {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background-image: url("../../icons/arrow-pagination.svg");
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.pagination__item:first-child {
+  position: relative;
+}
+
+.pagination__item:first-child::before {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background-image: url("../../icons/arrow-pagination.svg");
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  transform: rotate(180deg);
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.pagination__link-text {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}

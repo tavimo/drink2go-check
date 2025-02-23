@@ -1,0 +1,12 @@
+.hero {
+  background-color: $color-flat-white;
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient($color-flat-white 77%, #ffffff 25%);
+  }
+
+  @media (min-width: 1440px) {
+    background-image: none;
+    background-color: $color-flat-white;
+  }
+}
