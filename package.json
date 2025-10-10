@@ -72,4 +72,9 @@
     "stylelint-config-htmlacademy": "4.2.3",
     "w3c-html-validator": "1.8.1"
   }
+  "scripts": {
+  "start": "gulp",
+  "build": "gulp build",
+  "deploy": "gulp build --base=https://tavimo.github.io/drink2go-check/"
+}
 }
